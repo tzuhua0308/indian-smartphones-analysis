@@ -1,0 +1,25 @@
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# 環境
+.env
+.venv/
+venv/
+env/
+
+# 資料（不提交原始 CSV，請自行從 Kaggle 下載）
+*.csv
+*.xlsx
+data/
+
+# macOS
+.DS_Store
