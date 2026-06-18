@@ -71,14 +71,19 @@
 ## 快速開始
 
 ```bash
-# 1. 安裝套件
+# 1. 下載資料集（需先安裝 Kaggle CLI 並設定 API Token）
+pip install kaggle
+kaggle datasets download -d demonllord/indian-smartphones-under-20000specs-prices
+unzip indian-smartphones-under-20000specs-prices.zip -d data/
+
+# 2. 安裝套件
 pip install -r requirements.txt
 
-# 2. 開啟 notebook
+# 3. 開啟 notebook
 jupyter notebook indian-smartphones-under-20000.ipynb
 ```
 
-> **注意**：需自行從 Kaggle 下載資料集，放置於 notebook 同目錄，或修改 `LOCAL_PATH` 變數指向本機路徑。
+> **Kaggle API Token 設定**：至 [kaggle.com/settings](https://www.kaggle.com/settings) → API → Create New Token，將下載的 `kaggle.json` 放至 `~/.kaggle/kaggle.json`。
 
 ---
 
